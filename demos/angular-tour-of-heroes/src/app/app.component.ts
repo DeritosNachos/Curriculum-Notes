@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-tour-of-heroes';
+  name ='';
+  default = 'test';
+
+  click() {
+    this.name = this.default;
+  }
+
+  style: string[] = [`display: flex; flex-direction: row `]
 }
